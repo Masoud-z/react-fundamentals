@@ -2,7 +2,19 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
+<script type="module">
+  const root = document.getElementById('root')
+  const div = document.createElement('div')
+  div.textContent = 'Hello world'
+  div.className = 'container'
+  root.appendChild(div)
+</script>
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
