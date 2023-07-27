@@ -31,16 +31,7 @@ function UsernameForm({onSubmitUsername}) {
   }
 
   function handleChange(event) {
-    const value = event.target.value
-    if (value !== value.toLowerCase()) {
-      setError(true)
-    } else {
-      if (error) {
-        setError(false)
-      }
-      setInputValue(value)
-      console.log(value)
-    }
+    setInputValue(event.target.value.toLowerCase())
   }
 
   return (
